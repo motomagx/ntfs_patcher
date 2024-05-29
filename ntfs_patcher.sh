@@ -74,6 +74,7 @@ do
 	COUNTER=$(($COUNTER+1))
 done
 
+zenity --text-info --title="NTFS Patcher" --filename="$HOME_DIR/mounts/$MOUNTPOINT_ID.txt"
 
 
 

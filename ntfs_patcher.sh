@@ -51,6 +51,7 @@ fi
 MOUNTPOINT_ID="$RANDOM$RANDOM$RANDOM"
 find "$GAME_DIRECTORY" | grep -i '[.]exe' > "$HOME_DIR/mounts/$MOUNTPOINT_ID.txt"
 LINES=$( cat "$HOME_DIR/mounts/$MOUNTPOINT_ID.txt" | wc -l )
+LINES=$(($LINES+1))
 
 COUNTER=1
 
